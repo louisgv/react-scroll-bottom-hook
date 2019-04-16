@@ -1,5 +1,7 @@
 # react-scroll-bottom-hook
 
+> yarn add react-scroll-bottom-hook
+
 ## wutdis
 
 When you have legal doc and you want to check if user had scrolled to the bottom, this will solve your problem. Here's how:
