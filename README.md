@@ -4,13 +4,13 @@
 
 ## wutdis
 
-When you have legal doc and you want to check if user had scrolled to the bottom, this will solve your problem. Here's how:
+when you have legal doc and you want to check if user had scrolled to the bottom, this will solve your problem. Here's how:
 
 ```tsx
 import useScrollBottom from 'react-scroll-bottom-hook'
 
 export default function Welcome() {
-  const [isBottom, scrollRef ] = useScrollBottom() as any
+  const [isBottom, scrollRef ] = useScrollBottom()
 
   return (
     <div>
@@ -43,4 +43,4 @@ unlicensed, use it how u want xd
 
 ## maintainers
 
-+ [louis][https://twitter.com/litbid]
++ [louis](https://twitter.com/litbid)
