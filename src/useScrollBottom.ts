@@ -7,9 +7,11 @@ const useScrollBottom = () => {
   const scrollRef = useRef(null) as any
 
   const onScroll = () => {
-    setIsBottom(
-      scrollRef.current.scrollTop >= scrollRef.current.scrollHeight - scrollRef.current.clientHeight
-    )
+    if(scrollRef.current){
+      setIsBottom(
+        scrollRef.current.scrollTop >= scrollRef.current.scrollHeight - scrollRef.current.clientHeight
+      )
+    }
   }
 
   useEffect(() => {
@@ -18,7 +20,7 @@ const useScrollBottom = () => {
       scrollRef.current.removeEventListener('scroll', onScroll)
     }
   }, [
-      scrollRef
+    scrollRef.current
     ])
 
   return [isBottom, scrollRef]
