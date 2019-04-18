@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-bottom-hook",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A react hook that focus on scroll bottom.",
   "main": "lib/index.js",
   "module": "esm/index.js",
