@@ -17,7 +17,9 @@ const useScrollBottom = () => {
   useEffect(() => {
     scrollRef.current.addEventListener('scroll', onScroll)
     return () => {
-      scrollRef.current.removeEventListener('scroll', onScroll)
+      if(scrollRef && scrollRef.current) {
+        scrollRef.current.removeEventListener('scroll', onScroll)
+      }
     }
   }, [
     scrollRef.current
